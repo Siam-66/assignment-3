@@ -41,6 +41,9 @@
         .color-4{
             color: #ABEF5F;
         }
+        .color-5{
+            color: #ABEF5F80;
+        }
 
     </style>
 </head>
@@ -80,37 +83,53 @@
                 </div>
             </div>
 
-
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
+            <!-- hamburger menu -->
+            <div class="dropdown dropdown-end border-2 rounded-full">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden px-[1rem] m-1">
+                <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="h-7 w-7"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
                 </div>
                 <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a>Item 1</a></li>
-                  <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                      <li><a>Submenu 1</a></li>
-                      <li><a>Submenu 2</a></li>
-                    </ul>
-                  </li>
-                  <li><a>Item 3</a></li>
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow tex-[0.5rem]">
+                <li class="hover:font-bold"><a>Home</a></li>
+                <li class="hover:font-bold"><a>Services</a></li>
+                <li class="hover:font-bold"><a>Portfolio</a></li>
+                <li class="hover:font-bold"><a>Blogs</a></li>
+                <li class="hover:font-bold"><a>Contact Us</a></li>
                 </ul>
             </div>
         </div>
+        <!-- Hero section done -->
+        <section>
+            <div class="hero bg-base-100 min-h-screen">
+                <div class="hero-content text-center">
+                <div class="max-w-8xl">
+                    <img class="mx-auto text-center" src="assets/banner.png" alt="">
+                    <h1 class="lg:text-7xl text-4xl font-bold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6 lg:px-[8rem] px-[2rem]">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                    </p>
+                    <a class="btn bg-[#ABEF5F80] font-[900] border-[#ABEF5F] rounded-full text-xl  lg:px-[1rem] px-[7rem] hover:bg-[#6ece00] ">
+                        View Details                 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-9 bg-[#ABEF5F] text-black rounded-full p-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a>
+                </div>
+                </div>
+            </div>
+        </section>
     </header>
 </body>
 </html>
